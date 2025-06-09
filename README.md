@@ -1,4 +1,4 @@
-main file is index.py
+main file is index.py\n
 need to download shape_predictor_68_face_landmarks.dat not included
 first register
 then make weights using svm weights program
