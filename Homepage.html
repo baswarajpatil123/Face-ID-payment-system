@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the home page Group 12</h1>
+    <form action="http://localhost:5000/Home" method="post">
+        <input type="submit" name="ques" value="Buy">
+        <input type="submit" name="ques" value="Register">
+        <input type="submit" name="ques" value="Balance">
+    </form>
+</body>
+</html>

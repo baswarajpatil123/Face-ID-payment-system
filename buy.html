@@ -1,0 +1,36 @@
+<style>
+   body {
+       background-color: #121212;
+       color: #ffffff;
+       font-family: Arial, sans-serif;
+       padding: 40px;
+       text-align: center;
+   }
+
+   input[type="submit"] {
+       background-color: #1e1e1e;
+       color: #ffffff;
+       border: 1px solid #333;
+       padding: 10px 20px;
+       margin: 5px;
+       cursor: pointer;
+       font-size: 16px;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+   }
+
+   input[type="submit"]:hover {
+       background-color: #333333;
+   }
+</style>
+
+
+{% extends "layout.html" %}
+
+	{% block content %}
+      <form action = "http://localhost:5000/buy" method = "post">
+         <p>Are you {{person}}?</p>
+         <input type="submit" name="ques" value="Yes">
+         <input type="submit" name="ques" value="No">
+      </form>
+    {% endblock %}  

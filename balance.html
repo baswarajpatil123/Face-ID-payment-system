@@ -1,0 +1,74 @@
+<style>
+  body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+  }
+
+  h2 {
+      color: #ab8181;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+      background-color: #010101;
+      color: #0e0d0d;
+      border: 1px solid #333;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin: 5px 10px;
+  }
+
+  input[type="submit"]:hover {
+      background-color: #333333;
+  }
+
+  .flashes {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+
+  .flashes li {
+      background-color: #2c2c2c;
+      border-left: 5px solid #00bfa6;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      border-radius: 4px;
+  }
+
+  p {
+      margin: 15px 0 5px 0;
+  }
+</style>
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flashes">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <h2>Your balance is {{ bal }} right now, {{ person }}</h2>
+
+  <form action="{{ url_for('Balance') }}" method="post">
+    <p>Enter balance you would like to add:</p>
+    <input type="text" name="nm" placeholder="Enter amount" required />
+    <br><br>
+    <input type="submit" name="Button" value="Add" />
+    <input type="submit" name="Button" value="HomePage" />
+  </form>
+
+{% endblock %}
