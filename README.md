@@ -9,3 +9,6 @@ then make weights using svm weights program
 then try other features
 
 the cmake is needed as the face recognition has a c function need to interpreted for python
+
+
+![basic webapp](https://github.com/baswarajpatil123/Face-ID-payment-system/blob/main/Output%20img%2F1.png)
