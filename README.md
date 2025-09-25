@@ -12,3 +12,6 @@ the cmake is needed as the face recognition has a c function need to interpreted
 
 
 ![basic webapp](https://github.com/baswarajpatil123/Face-ID-payment-system/blob/main/Output%20img%2F1.png)
+
+
+![wallet](https://github.com/baswarajpatil123/Face-ID-payment-system/blob/main/Output%20img%2F2.png)
